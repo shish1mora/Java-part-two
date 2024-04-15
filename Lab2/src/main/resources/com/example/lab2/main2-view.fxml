@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.Main2Controller" stylesheets="@style.css">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="эффект размытия" />
+                        <Slider fx:id="slid1" blockIncrement="1.0" majorTickUnit="5.0" max="5.0" minorTickCount="4" onMouseDragged="#onBlur" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                        <Label text="оттенок" />
+                        <Slider fx:id="slid2" blockIncrement="0.1" majorTickUnit="0.5" max="1.0" min="-1.0" minorTickCount="4" onMouseDragged="#onHue" showTickLabels="true" showTickMarks="true" />
+                        <Label text="насыщение" />
+                        <Slider fx:id="slid3" blockIncrement="0.1" majorTickUnit="0.5" max="1.0" min="-1.0" minorTickCount="4" onMouseDragged="#onSaturation" showTickLabels="true" showTickMarks="true" />
+                        <Label text="яркость" />
+                        <Slider fx:id="slid4" blockIncrement="0.1" majorTickUnit="0.5" max="1.0" min="-1.0" minorTickCount="4" onMouseDragged="#onBrightness" showTickLabels="true" showTickMarks="true" />
+                        <Label text="контраст" />
+                        <Slider fx:id="slid5" blockIncrement="0.1" majorTickUnit="0.5" max="1.0" min="-1.0" minorTickCount="4" onMouseDragged="#onContrast" showTickLabels="true" showTickMarks="true" />
+                        <Button fx:id="btn_app" mnemonicParsing="false" onAction="#onApp" text="Из приложения" />
+                        <Button fx:id="btn_disk" mnemonicParsing="false" onAction="#onDisk" text="С диска" />
+                        <Button mnemonicParsing="false" onAction="#onClear" text="Очистить" />
+                        <Button fx:id="btn_exit" mnemonicParsing="false" onAction="#onExit" text="Выход" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="imagviwe" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

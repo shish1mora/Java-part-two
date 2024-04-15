@@ -1,0 +1,21 @@
+.button{
+    -fx-text-fill        : #006464;
+    -fx-background-color : #DFB951;
+    -fx-border-radius    : 20;
+    -fx-background-radius: 20;
+    -fx-padding          : 5;
+}
+.slider{
+    -fx-border-color: white;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+}
+.root {
+    -fx-font-size: 14pt;
+    -fx-font-family: "LucidaBrightDemiBold";
+    -fx-background: lightgreen;
+    -fx-base: rgb(250, 250, 250);
+    -fx-focus-color: derive( sky-blue , 90% );
+    sky-blue: rgb(17, 145, 213);
+    brighter-sky-blue: derive( sky-blue , 50% );
+}

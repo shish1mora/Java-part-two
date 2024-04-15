@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.MainController" stylesheets="@style.css">
+   <children>
+      <HBox prefHeight="27.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="416.0" text="Существует ли треугольник? " />
+         </children>
+      </HBox>
+      <HBox prefHeight="31.0" prefWidth="600.0">
+         <children>
+            <Label text="Введите сторону A:" />
+            <TextField fx:id="enter_A" />
+         </children>
+      </HBox>
+      <Slider fx:id="slider_1" majorTickUnit="5.0" minorTickCount="4" onMouseDragged="#onSlider_1" showTickLabels="true" showTickMarks="true" />
+      <HBox prefHeight="31.0" prefWidth="600.0">
+         <children>
+            <Label text="Введите сторону B:" />
+            <TextField fx:id="enter_B" />
+         </children>
+      </HBox>
+      <Slider fx:id="slider_2" majorTickUnit="5.0" minorTickCount="4" onMouseDragged="#onSlider_2" showTickLabels="true" showTickMarks="true" />
+      <HBox prefHeight="33.0" prefWidth="600.0">
+         <children>
+            <Label text="Введите сторону C:" />
+            <TextField fx:id="enter_C" />
+         </children>
+      </HBox>
+      <Slider fx:id="slider_3" majorTickUnit="5.0" minorTickCount="4" onMouseDragged="#onSlider_3" prefHeight="0.0" prefWidth="600.0" showTickLabels="true" showTickMarks="true" />
+      <Label fx:id="vivod" />
+      <HBox prefHeight="65.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btn_Opredelit" mnemonicParsing="false" onAction="#onClick" text="Определить" />
+            <Button fx:id="btn_clear" mnemonicParsing="false" onAction="#onClear" text="Очистить" />
+            <Button fx:id="btn_exit" mnemonicParsing="false" onAction="#onExit" text="Выход" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
