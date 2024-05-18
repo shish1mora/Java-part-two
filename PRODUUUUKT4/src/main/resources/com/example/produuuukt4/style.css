@@ -1,0 +1,32 @@
+.root {
+    -fx-background-color: #ffcc80; /* Изменен цвет фона */
+}
+
+#taResultat {
+    -fx-pref-height: 400.0; /* Изменена высота */
+    -fx-pref-width: 800.0; /* Изменена ширина */
+}
+
+.hbox {
+    -fx-spacing: 15.0; /* Увеличен интервал между элементами */
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-pref-width: 120.0; /* Увеличена ширина кнопок */
+    -fx-background-color: #ff9999; /* Изменен цвет фона кнопок */
+}
+
+.label {
+    -fx-pref-height: 25.0; /* Увеличена высота меток */
+    -fx-text-fill: #660066; /* Изменен цвет текста */
+    -fx-background-color: #ff9999; /* Изменен цвет фона меток */
+}
+
+.text-field {
+    -fx-pref-width: 250.0; /* Увеличена ширина текстовых полей */
+}
+
+.vbox {
+    -fx-spacing: 15.0; /* Увеличен интервал между элементами */
+}
