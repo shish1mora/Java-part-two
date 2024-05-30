@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBHelper {
     private final static String DB_URL = "jdbc:mysql://localhost:3306/institut";
     private final static String LOGIN = "root";
-    private final static String PASS = "1234";
+    private final static String PASS = "";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, LOGIN, PASS);
